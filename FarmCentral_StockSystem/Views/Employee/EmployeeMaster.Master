@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="EmployeeMaster.master.cs" Inherits="FarmCentral_StockSystem.Views.Employee.EmployeeMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Farm Central Stock Management System</title>
+    <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="../../Assests/css/EmployeeMstStyle.css" rel="stylesheet" />
+
+       
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <style type="text/css">
+        .auto-style1 {
+            width: 41px;
+            height: 33px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="sidebar">
+                <h2>Admin Dashboard</h2>
+                <ul>
+                    <li><img src="../../Assests/Images/home.png"><a href="EmployeeHome.aspx">Dashboard</a></li>
+                    <li><img src="../../Assests/Images/user.png"><a href="Farmers.aspx">Farmers</a></li>
+                    <li><img src="../../Assests/Images/procurement.png"><a href="ViewProducts.aspx">View Products</a></li>
+                </ul>
+                <div class="logout_btn">
+                     <a href="../Login.aspx">Logout</a>
+                    </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="Mybody" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

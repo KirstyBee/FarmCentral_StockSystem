@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FarmerMaster.master.cs" Inherits="FarmCentral_StockSystem.Views.Farmer.FarmerMaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <title>Farm Central Stock Management System</title>
+
+     <meta charset="UTF-8">
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+    <link href="../../Assests/css/EmployeeMstStyle.css" rel="stylesheet" />
+
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="wrapper">
+            <div class="sidebar">
+                <h3>Farmer Dashboard</h3>
+                <ul>
+                    <li><img src="../../Assests/Images/home.png"><a href="#">Dashboard</a></li>
+                    <li><img src="../../Assests/Images/product.png" /><a href="Products.aspx">Product</a></li>
+                    <li><img src="../../Assests/Images/Category.png" /><a href="#">Category</a></li>
+                </ul>
+                <div class="logout_btn">
+                     <a href="../Login.aspx">Logout</a>
+                    </div>
+            </div>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
